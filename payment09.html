@@ -1,0 +1,131 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="icon" href="img.jpg">
+     
+     <style>
+        *{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30 px;
+    font-size: 17px;
+    padding: 8px;
+   
+    
+}
+
+.content{
+    background: color #f2f2f2;
+    padding: 5px 20 px 15px 20px;
+    border: 11ex solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="text"]
+input[type="email"]
+input[type="number"]
+input[type="password"]
+input[type="date"]
+
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.head{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: #4deaea;
+    color:white;
+    padding: 17px 20px;
+    border: dotted;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]{
+    background-color: #4caf;
+}
+.font{
+    font-family:algerian;
+}
+
+     </style>
+ </head>
+ 
+ <body background=""> 
+    <div class="content">
+
+
+    <font face="algerian">
+    <h1 align="center" class="head"> Payment Form</h1>
+    <h2>Contact info:</h2>
+</font>
+
+    <p>
+        Name : <input type="text" name="name" placeholder="ENTER A NAME" required>
+    </p>
+
+    <fieldset>
+        <legend> Gender</legend>
+        <p>
+            Male: <input type="radio" name="gender" id="male" required >
+            Female: <input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+    
+    <p>
+        Address: <textarea name="Address" id="address" cols="130" rows="10" .></textarea>
+    </p>
+
+     <p>
+        Email: <input type="email" name="email" id="email" required placeholder="ENTER A EMAIL..">
+     </p>
+ 
+     <p>
+        Pincode: <input type="number" name="pin" id="Pincode" required placeholder="ENTER A Pincode."  >
+     </p>
+
+     <h2 class="font">Payment informtion</h2>
+
+     <p>
+        Card Type: <select name="card type" id="card type">
+            <option value="">--select a card type--</option>
+            <option value="">VISA</option>
+            <option value="">RUPAY</option>
+            <option value="">MASTER CARD</option>
+        </select>
+     </p>
+
+     <p>
+        Card Number : <input type="number" name="card number" id=" card number">
+     </p>
+      <p>
+        Expiration Date: <input type="date" name="expiry date" id="expiry date">
+    
+      </p>
+
+      <p>
+        C V V: <input type="pasword" name="cvv" id="cvv">
+      </p>
+      <input type="submit" value="PAY NOW">
+    </div>
+</body>
+</html>
